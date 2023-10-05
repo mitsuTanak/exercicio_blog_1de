@@ -2,7 +2,7 @@
     <head>
         <?php
 
-        require_once("helpers/url.php");
+        require_once("helper/url.php");
         ?>
 
         <link rel="stylesheet" href="<?= $BASE_URL?>/css/style.css">
@@ -28,5 +28,6 @@
                 <li><a href="<?=$BASE_URL?>/contato.php" class="nav-link">Contato</a></li>
             </ul>
         </header>
+        <footer>Footer 2023</footer>
     </body>
 </html>
