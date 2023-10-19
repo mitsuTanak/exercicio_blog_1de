@@ -4,7 +4,49 @@
 
 ?>
 
-<h1>Olá Mundo!! Bem-vindo ao PHP</h1>
+<!-- <h1>Olá Mundo!! Bem-vindo ao PHP</h1>-->
+
+<?php
+
+    // var_dump($posts);
+    // print_r($posts);
+    // echo "<br><br>";
+
+?>
+
+<main>
+    <div id="title-container">
+
+        <h1>Code Blog</h1>
+        <p>O seu Blog de Programação</p>
+
+    </div>
+    <div id="post-container">
+
+        <?php foreach($posts as $post); ?>
+
+        <div class="post-box">
+
+            <img src="<?=$BASE_URL ?>/img/<?=$post['img']?>" alt="<?=$post['title'] ?>">
+
+            <h2 class="post-title"><a href="<?=$BASE_URL?>post.php?id=<?=$post['id'] ?>"></a></h2>
+
+        </div>
+
+        <p class="post-description"><?= $post['description']?></p>
+        <div class="tags-container">
+            <?php
+              foreach ($post['tags'] as $tag);
+            ?>
+
+            <a href="#"><?=$tag?></a>
+
+            <?php 
+                endforeach;
+            ?>
+        </div>
+    </div>
+<main>
 
 <?php
 

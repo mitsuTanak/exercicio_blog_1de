@@ -2,7 +2,9 @@
     <head>
         <?php
 
-        require_once("helper/url.php");
+            require_once("helper/url.php");
+            require_once("data/posts.php");
+            require_once("data/categorias.php");
         ?>
 
         <link rel="stylesheet" href="<?= $BASE_URL?>/css/style.css">
