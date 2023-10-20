@@ -20,8 +20,8 @@
    <div id="posts-container">
       <?php foreach($posts as $post): ?>
         <div class="post-box">
-            <img src="<?=$BASE_URL ?>/img/<?=$post['img']?>" alt="<?=['title'] ?>">
-            <h2 class="post-title"><a href="<?=$BASE_URL ?>post.php?id=<?=$post['id']?>"><?=$post['title']?></a></h2>
+            <img src="<?=$BASE_URL2 ?>/img/<?=$post['img']?>" alt="<?=['title'] ?>">
+            <h2 class="post-title"><a href="<?=$BASE_URL2 ?>post.php?id=<?=$post['id']?>"><?=$post['title']?></a></h2>
 
             <p class="post-description"><?=$post['description']?></p>
 
